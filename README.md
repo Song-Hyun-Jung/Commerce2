@@ -17,7 +17,8 @@ SpringBoot + Lucene + Swagger
   <img width="406" alt="loginResult" src="https://user-images.githubusercontent.com/57795722/196342771-d49265db-623f-43d4-8f0a-7c1c6c33212a.png"><br/>
   *결과로 받아온 token값을 Authorize에 넣어준다.<br/>
   <img width="162" alt="AuthorizeBtn" src="https://user-images.githubusercontent.com/57795722/196342766-ed0d2baa-7490-48ce-b1cc-6ea0ede90544.png">
-  <img width="538" alt="Authorize" src="https://user-images.githubusercontent.com/57795722/196342786-9f2a9fa0-0e86-4abe-86dc-1064cf57b0cd.png">
+  <img width="538" alt="Authorize" src="https://user-images.githubusercontent.com/57795722/196342786-9f2a9fa0-0e86-4abe-86dc-1064cf57b0cd.png"><br/>
+  *로그인은 30분간 유효하다. 단, 컨트롤러 실행시 다시 접속 시간이 갱신되어 그 시점부터 30분간 유효하다. 
 </div>
 <hr/>
 <div>
