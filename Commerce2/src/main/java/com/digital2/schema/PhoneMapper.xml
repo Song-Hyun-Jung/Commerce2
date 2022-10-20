@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.digital3.sql.mapper.PhoneMapper">
+			<!--Phone 테이블에서 Phone 찾아오기-->
+			 <select id="getPhone" resultType="com.digital3.sql.vo.PhoneVO"> 
+                     SELECT phoneId, phoneNumber
+                     FROM 	phone
+                     WHERE	phoneNumber = #{phoneNumber}
+                             
+           </select>
+			<!--Phone테이블에 저장-->
+			<insert id="insertPhone" parameterType="com.digital3.sql.vo.PhoneVO"> 
+				INSERT INTO Phone (phoneId, phoneNumber) 
+				VALUES (#{phoneId}, #{phoneNumber}) 
+			</insert> 
+			
+</mapper>
